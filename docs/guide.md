@@ -24,23 +24,45 @@ Too get started working with this platform, there are some basic prerequisite.
 <b>Let's put you on :fire:</b>
 :::
 
-# Directory structure :book:
+# Directory structure Docs :book:
 
 ```
 ├── README.md
-├── babel.config.js
+├── deploy.sh
 ├── docs
 │   ├── README.md
 │   ├── components
 │   │   ├── README.md
+│   │   ├── base-anchor.md
 │   │   ├── base-component.md
-│   │   └── input-tags.md
-│   └── guide.md
+│   │   ├── counter.md
+│   │   ├── input-tags.md
+│   │   └── tab-structure.md
+│   ├── guide.md
+│   └── package.json
+├── package.json
+└── yarn.lock
+```
+# Directory structure Components :book:
+```
+├── README.md
+├── babel.config.js
 ├── jest.config.js
+├── main.js
 ├── package.json
 ├── src
 │   ├── components
-│   │   ├── Button
+│   │   ├── Anchor
+│   │   │   ├── Anchor.spec.js
+│   │   │   ├── Anchor.vue
+│   │   │   └── index.js
+│   │   ├── Counter
+│   │   │   ├── Counter.spec.js
+│   │   │   ├── Counter.vue
+│   │   │   └── index.js
+│   │   ├── DynamicTabStructure
+│   │   │   ├── DynamicTabStructure.vue
+│   │   │   └── index.js
 │   │   ├── FunctionalComponent
 │   │   │   ├── FunctionalComponent.spec.ts
 │   │   │   ├── FunctionalComponent.vue
@@ -54,11 +76,9 @@ Too get started working with this platform, there are some basic prerequisite.
 │   │   │   ├── StandardComponent.vue
 │   │   │   └── index.js
 │   │   └── index.js
-│   ├── main.js
 │   ├── shims-tsx.d.ts
 │   └── shims-vue.d.ts
-├── tsconfig.json
-└── yarn.lock
+└── tsconfig.json
 ```
 
 <style scoped>
