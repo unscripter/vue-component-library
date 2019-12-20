@@ -3,9 +3,10 @@
   "description": "Anatta design resuable vue component library",
   "version": "0.1.0",
   "main": "main.js",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/unscripter/vue-cpmponent-library.git"
+    "url": "git+https://github.com/unscripter/vue-component-library.git"
   },
   "keywords": [
     "Anatta Design",
@@ -16,18 +17,17 @@
   "author": "Unscripter <amit.mundra52@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/unscripter/vue-cpmponent-library/issues"
+    "url": "https://github.com/unscripter/vue-component-library/issues"
   },
-  "homepage": "https://github.com/unscripter/vue-cpmponent-library#readme",
+  "homepage": "https://github.com/unscripter/vue-component-library#readme",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "lint": "vue-cli-service lint"
   },
   "devDependencies": {
-    "vuepress": "^1.0.0-rc.1"
-  },
-  "dependencies": {
-    "anatta-component-library": "^0.1.0"
+    "global": "^4.3.2",
+    "vuepress": "^1.0.0-rc.1",
+    "@vuepress/plugin-active-header-links": "^1.0.0-rc.1"
   }
 }

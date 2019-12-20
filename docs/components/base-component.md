@@ -7,5 +7,5 @@
 ## Source Code
 
 <SourceCode>
-<<< @/src/components/StandardComponent/StandardComponent.vue
+<<< @/node_modules/anatta-component-library/src/components/StandardComponent/StandardComponent.vue
 </SourceCode>

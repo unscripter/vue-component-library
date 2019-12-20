@@ -7,5 +7,5 @@
 ## Source Code
 
 <SourceCode>
-<<< @/src/components/Counter/Counter.vue
+<<< @/node_modules/anatta-component-library/src/components/Counter/Counter.vue
 </SourceCode>

@@ -1,5 +1,6 @@
-import ComponentLibrary from '../../src/main'
+import ComponentLibrary from 'anatta-component-library'
 
+console.log( "ComponentLibrary", ComponentLibrary )
 export default ( {
   Vue,
   options,

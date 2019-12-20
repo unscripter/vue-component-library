@@ -11,7 +11,7 @@ pageClass: custom-page-class
 ## Source Code
 
 <SourceCode>
-<<< @/src/components/DynamicTabStructure/DynamicTabStructure.vue
+<<< @/node_modules/anatta-component-library/src/components/DynamicTabStructure/DynamicTabStructure.vue
 </SourceCode>
 
 ## slots

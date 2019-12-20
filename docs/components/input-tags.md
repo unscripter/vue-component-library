@@ -7,5 +7,5 @@
 ## Source Code
 
 <SourceCode>
-<<< @/src/components/InputTags/InputTags.vue
+<<< @/node_modules/anatta-component-library/src/components/InputTags/InputTags.vue
 </SourceCode>

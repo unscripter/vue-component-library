@@ -1,16 +1,12 @@
 module.exports = {
-  locales: {
-    '/': {
-      lang: 'en-US',
-      title: 'Anatta Component Library 🥂',
-      description: 'Documentation site for the Anatta Design Vue component library'
-    }
-  },
+  title: 'Anatta Component Library 🥂',
+  description: 'Documentation site for the Anatta Design Vue component library',
+  base: '/vue-component-library/',
   themeConfig: {
     repoLabel: 'Contribute!',
     logo: '/anatta.png',
     // git repo here... gitlab, github
-    repo: 'https://github.com/unscripter/vue-cpmponent-library',
+    repo: 'https://github.com/unscripter/vue-component-library',
     docsDir: 'docs',
     editLinks: true,
     docsBranch: 'master',
@@ -39,7 +35,7 @@ module.exports = {
           // external link to git repo...again
           {
             text: 'GitHub',
-            link: 'https://github.com/unscripter/vue-cpmponent-library'
+            link: 'https://github.com/unscripter/vue-component-library'
           }
         ],
         sidebar: {
