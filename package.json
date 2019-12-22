@@ -28,6 +28,7 @@
     "vuepress": "^1.0.0-rc.1"
   },
   "dependencies": {
+    "accessibility-directives": "^1.0.0",
     "anatta-component-library": "^0.1.0"
   }
 }

@@ -1,5 +1,11 @@
 <template>
-  <Anchor title="abc" class="anchor" />
+  <div class="marginTop1">
+    <v-anchor
+      title="Base Anchor"
+      class="anchor2"
+      href="/vue-component-library/components/base-anchor"
+    />
+  </div>
 </template>
 
 <script>
@@ -8,12 +14,14 @@ export default {
 };
 </script>
 
-<style>
-.anchor {
-  /* margin-top: 20px; */
-  /* height: 20px; */
-  /* padding: 15px; */
+<style scoped>
+.marginTop1 {
+  margin-top: 20px;
+}
+.anchor2 {
   background-color: #4ec6de;
+  color: white;
+  padding: 10px;
   color: white;
 }
 </style>

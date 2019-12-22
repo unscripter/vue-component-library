@@ -1,5 +1,5 @@
 <template>
-  <tags-input v-model="tags">
+  <v-tags-input v-model="tags">
     <div class="tags-input" slot-scope="{ tags, removeTag, inputAttrs, inputEvents }">
       <span class="tags-input-tag" v-for="tag in tags">
         <span>{{ tag }}</span>
@@ -13,7 +13,7 @@
         v-bind="inputAttrs"
       />
     </div>
-  </tags-input>
+  </v-tags-input>
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 import ComponentLibrary from 'anatta-component-library'
+import DirectiveLibary from 'accessibility-directives'
 
-console.log( "ComponentLibrary", ComponentLibrary )
 export default ( {
   Vue,
   options,
@@ -8,4 +8,5 @@ export default ( {
   siteData
 } ) => {
   Vue.use( ComponentLibrary )
+  Vue.use( DirectiveLibary, [ 'FocusTrap' ] )
 }

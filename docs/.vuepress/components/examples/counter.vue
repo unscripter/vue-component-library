@@ -1,14 +1,21 @@
 <template>
-  <Counter>
-    <div class="counter" slot-scope="{ increment, decrement, reset, count, amount  }">
+  <v-counter>
+    <div
+      class="counter"
+      slot-scope="{ increment, decrement, reset, count, inputAttrs, inputEvents  }"
+    >
       <p class="counter-count">{{ count }}</p>
       <div class="counter-actions">
         <button class="counter-button" @click="increment">Add</button>
         <button class="counter-button" @click="decrement">Subtract</button>
         <button class="counter-button" @click="reset">Reset</button>
       </div>
+      <div>
+        <label for="change-amount" class="counter-label">Change Amount:</label>
+        <input type="number" class="counter-input" v-on="inputEvents" v-bind="inputAttrs" />
+      </div>
     </div>
-  </Counter>
+  </v-counter>
 </template>
 
 <style>

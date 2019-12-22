@@ -42,7 +42,7 @@ module.exports = {
           '/components/': [ {
             title: 'Components',
             collapsable: false,
-            children: [ 'base-component', 'input-tags', 'counter', 'tab-structure', 'base-anchor' ]
+            children: [ 'base-component', 'input-tags', 'counter', 'tab-structure', 'base-anchor', 'modal' ]
           } ]
         }
       }

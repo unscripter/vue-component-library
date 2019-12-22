@@ -1,5 +1,5 @@
 <template>
-  <dynamic-tab-structure v-model="tabs">
+  <v-dynamic-tab-structure v-model="tabs">
     <div slot-scope="{ tabs, switchTab, currentTab, currentTabComponent }" class="tabs-backgrouund">
       <div>
         <ul>
@@ -8,17 +8,17 @@
             :key="tab.id"
             @click="switchTab(index)"
             :class="[tab.active ? 'active' : 'no-active']"
-          >{{ tab.title }}</li>
+          >{{ tab.name }}</li>
         </ul>
       </div>
       <div class="dynamic-area">
         <keep-alive>
           <component :is="currentTabComponent" />
         </keep-alive>
-        <Anchor :title="currentTab" :href="currentTab" class="active anchor" />
+        <v-anchor :title="currentTab" :href="currentTab" class="active anchor1" />
       </div>
     </div>
-  </dynamic-tab-structure>
+  </v-dynamic-tab-structure>
 </template>
 
 <script>
@@ -30,22 +30,32 @@ export default {
         {
           title: "input-tags",
           id: "input-tags",
-          active: true
+          active: true,
+          name: "Input Tags"
         },
         {
           title: "counter",
           id: "counter",
-          active: false
+          active: false,
+          name: "Counter"
         },
         {
           title: "base-component",
           id: "base-component",
-          active: false
+          active: false,
+          name: "Base Component"
         },
         {
-          title: "tab-structure",
-          id: "tab-structure",
-          active: false
+          title: "modal",
+          id: "modal",
+          active: false,
+          name: "Modal"
+        },
+        {
+          title: "base-anchor",
+          id: "base-anchor",
+          active: false,
+          name: "Base Anchor"
         }
       ]
     };
@@ -88,12 +98,13 @@ li {
   position: relative;
 }
 
-.anchor {
+.anchor1 {
   height: 20px;
-  padding: 15px;
+  padding: 20px;
   position: absolute;
   bottom: 10px;
   right: 10px;
   color: white;
+  line-height: 5px;
 }
 </style>

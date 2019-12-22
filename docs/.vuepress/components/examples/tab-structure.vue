@@ -25,13 +25,18 @@ export default {
     return {
       tabs: [
         {
-          title: "input-tags",
+          title: "v-input-tags",
           id: "input-tags",
           active: true
         },
         {
-          title: "counter",
+          title: "v-counter",
           id: "counter",
+          active: false
+        },
+        {
+          title: "v-modal",
+          id: "modal",
           active: false
         }
       ]

@@ -21,7 +21,7 @@ Too get started working with this platform, there are some basic prerequisite.
 </ul>
 
 ::: warning
-<b>Let's put you on :fire:</b>
+<b>Let's put you on :fire: <a href="/vue-component-library/components/" class="anchor3">Components</a> </b>
 :::
 
 # Directory structure Docs :book:
@@ -37,9 +37,9 @@ Too get started working with this platform, there are some basic prerequisite.
 │   │   ├── base-component.md
 │   │   ├── counter.md
 │   │   ├── input-tags.md
+│   │   ├── modal.md
 │   │   └── tab-structure.md
-│   ├── guide.md
-│   └── package.json
+│   └── guide.md
 ├── package.json
 └── yarn.lock
 ```
@@ -49,8 +49,12 @@ Too get started working with this platform, there are some basic prerequisite.
 ├── babel.config.js
 ├── jest.config.js
 ├── main.js
+├── package-lock.json
 ├── package.json
 ├── src
+│   ├── assets
+│   │   ├── component.png
+│   │   └── components.png
 │   ├── components
 │   │   ├── Anchor
 │   │   │   ├── Anchor.spec.js
@@ -71,6 +75,10 @@ Too get started working with this platform, there are some basic prerequisite.
 │   │   │   ├── InputTags.spec.js
 │   │   │   ├── InputTags.vue
 │   │   │   └── index.js
+│   │   ├── Modal
+│   │   │   ├── Modal.spec.js
+│   │   │   ├── Modal.vue
+│   │   │   └── index.js
 │   │   ├── StandardComponent
 │   │   │   ├── StandardComponent.ts
 │   │   │   ├── StandardComponent.vue
@@ -88,6 +96,10 @@ p {
 ul {
   list-style: none;
   color: #42b983;
+  font-size: 20px;
+}
+.anchor3 {
+  color: #42b983 !important;
   font-size: 20px;
 }
 </style>

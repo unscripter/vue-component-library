@@ -1,11 +1,11 @@
 <template>
   <div>
-    <standard-component>
+    <v-standard-component>
       <h1>This is slot content 1.</h1>
-    </standard-component>
-    <standard-component>
+    </v-standard-component>
+    <v-standard-component>
       <h1>This is slot content 2.</h1>
-    </standard-component>
+    </v-standard-component>
   </div>
 </template>
 
